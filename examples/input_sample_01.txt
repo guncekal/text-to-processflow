@@ -1,0 +1,4 @@
+The milk procurement request is received by the quality team.
+The milk is checked against quality criteria.
+If the milk is compliant, it is accepted and stored in the warehouse.
+If it is not compliant, it is rejected and returned.
