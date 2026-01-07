@@ -1,12 +1,14 @@
 # FlowMind (text-to-processflow)
 
 FlowMind is an AI-powered system that converts unstructured, natural-language process descriptions into a structured, machine-readable process flow format.
+
 Instead of generating static diagrams, FlowMind focuses on producing a deterministic intermediate representation that can be validated, analyzed, and later rendered into diagrams or integrated into other systems.
 
 # What Problem Does It Solve?
 
 Organizations describe processes mostly in text, while systems require structure.
 This gap causes ambiguity, inconsistency, and manual modeling effort.
+
 FlowMind bridges this gap by transforming text into a rule-based process flow schema, enabling automation, validation, and reuse.
 
 # How It Works (High-Level)
