@@ -99,6 +99,7 @@ Instead, structural patterns such as consecutive events are surfaced as open que
 
 Each node in the DSL contains the following fields:
 
+```json
 {
   "id": "string",
   "type": "event | activity | decision",
@@ -110,6 +111,7 @@ Each node in the DSL contains the following fields:
     "value": ["one or more source references"]
   }
 }
+```
 
 - responsible represents a position or team explicitly mentioned or clearly implied
   
@@ -119,6 +121,7 @@ Each node in the DSL contains the following fields:
 
 # Example Output (Simplified)
 
+```json
 {
   "nodes": [
     {
@@ -167,6 +170,7 @@ Each node in the DSL contains the following fields:
     "Confidence values reflect extraction strength, not business correctness."
   ]
 }
+```
 
 # Design Intent
 
