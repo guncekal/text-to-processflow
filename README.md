@@ -209,3 +209,12 @@ Structural patterns (e.g. consecutive events) are highlighted for discussion rat
 - FlowMind does not replace human process expertise
 
 It is designed to accelerate review and discussion, not to eliminate expert judgment.
+
+# How to Run
+
+## How to Run (Local)
+
+```bash
+cd backend
+python app/main.py ../examples/input_sample.txt --out output.json
+```
