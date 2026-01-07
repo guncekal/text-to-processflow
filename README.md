@@ -9,7 +9,7 @@ Organizations describe processes mostly in text, while systems require structure
 This gap causes ambiguity, inconsistency, and manual modeling effort.
 FlowMind bridges this gap by transforming text into a rule-based process flow schema, enabling automation, validation, and reuse.
 
-How It Works (High-Level)
+# How It Works (High-Level)
 
 1) A user provides a free-text process description
 2) An LLM extracts process elements into a predefined Process DSL (JSON)
@@ -18,7 +18,7 @@ How It Works (High-Level)
    
 The system never invents missing information; ambiguities are explicitly reported.
 
-Core Principles
+# Core Principles
 
 -Text-to-structure, not text-to-diagram
 
@@ -31,7 +31,7 @@ Core Principles
 -Designed for process engineering and knowledge management use cases
 
 
-Roadmap (Initial)
+# Roadmap (Initial)
 
 -Process DSL v1 definition
 
