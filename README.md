@@ -16,7 +16,7 @@ FlowMind is designed to provide a high-quality first draft of a process flow by 
 
 This helps process engineers move faster from “blank page” to a reviewable model, so teams can focus on validation, improvement, and standardization rather than initial modeling effort.
 
-# How It Works (High-Level)
+# How It Works
 
 FlowMind accepts either free text input or uploaded documents such as procedures, work instructions, or transcribed process discussions (including speech-to-text outputs).
 
