@@ -44,15 +44,29 @@ Rather than completing or optimizing the process, FlowMind intentionally surface
 
 # Core Principles
 
--Text-to-structure, not text-to-diagram
+FlowMind is intentionally designed as a draft-generation and clarification tool, not as an automated process designer.
 
--Deterministic output with schema validation
+Its core design principles are:
 
--No hallucinated steps or roles
+   - Text to structure, not completion
+     
+   The system converts unstructured descriptions into a structured process representation without attempting to complete or optimize the process.
+   
+   - No invented information
+     
+   Missing steps, roles, or rules are never assumed. Unclear or incomplete areas are explicitly surfaced instead of being filled in.
 
--Explicit handling of uncertainties
+   - Uncertainty as a feature
+     
+   Structural gaps (e.g. potential decision points or undefined transitions) are highlighted to trigger discussion and validation by process teams.
 
--Designed for process engineering and knowledge management use cases
+   - Rule-driven validation
+     
+   All outputs are checked against explicit process rules to ensure structural consistency and reviewability.
+
+   - Human-in-the-loop by design
+     
+   FlowMind supports human judgment rather than replacing it, positioning AI as an accelerator for collaborative process modeling.
 
 
 # Roadmap (Initial)
