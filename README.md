@@ -15,20 +15,30 @@ How It Works (High-Level)
 2) An LLM extracts process elements into a predefined Process DSL (JSON)
 3) The output is validated against structural and graph rules
 4) Optional: the structured flow is rendered into a diagram-ready text format (e.g. Mermaid)
+   
 The system never invents missing information; ambiguities are explicitly reported.
 
 Core Principles
 
 -Text-to-structure, not text-to-diagram
+
 -Deterministic output with schema validation
+
 -No hallucinated steps or roles
+
 -Explicit handling of uncertainties
+
 -Designed for process engineering and knowledge management use cases
+
 
 Roadmap (Initial)
 
 -Process DSL v1 definition
+
 -Text → Process extraction pipeline
+
 -Structural and graph validation rules
+
 -Mermaid flowchart renderer
+
 -Expanded examples and test cases
