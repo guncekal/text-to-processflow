@@ -1,0 +1,11 @@
+[project]
+name = "flowmind"
+version = "0.1.0"
+description = "FlowMind - Text to Process Flow (AI-assisted process draft generation)"
+readme = "../README.md"
+requires-python = ">=3.10"
+
+dependencies = []
+
+[project.scripts]
+flowmind = "app.main:main"
