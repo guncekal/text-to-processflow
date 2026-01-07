@@ -184,3 +184,28 @@ The Process DSL is intentionally not:
   
 Its purpose is to provide a clear, reviewable first draft that helps process teams move from unstructured descriptions to structured discussion and validation.
 
+# Limitations & Non-Goals
+
+FlowMind is intentionally scoped as a process understanding and draft-generation tool, not as a fully automated modeling or execution system.
+
+The following limitations are by design:
+
+- FlowMind does not complete, optimize, or correct processes
+
+Missing activities, roles, or rules are surfaced as open questions instead of being inferred.
+
+- FlowMind does not guarantee process correctness
+
+The output reflects how confidently the structure was extracted from the input, not whether the process itself is valid or compliant.
+
+- FlowMind does not produce executable workflows or BPMN models
+
+The Process DSL is an intermediate representation, not a runtime or automation format.
+
+- FlowMind does not enforce strict modeling conventions
+
+Structural patterns (e.g. consecutive events) are highlighted for discussion rather than automatically fixed.
+
+- FlowMind does not replace human process expertise
+
+It is designed to accelerate review and discussion, not to eliminate expert judgment.
