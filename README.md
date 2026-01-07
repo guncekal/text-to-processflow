@@ -218,3 +218,22 @@ It is designed to accelerate review and discussion, not to eliminate expert judg
 cd backend
 python app/main.py ../examples/input_sample.txt --out output.json
 ```
+
+## Configuration
+
+## Configuration
+
+FlowMind requires an OpenAI API key to perform LLM-based extraction.
+
+The API key is provided via an environment variable and is never stored in the repository.
+
+1. Create a `.env` file in the project root:
+   
+   ```env
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+   
+2. Make sure the .env file is not committed to version control (.env is already included in .gitignore).
+
+Each user must supply their own API key to use FlowMind.
+
