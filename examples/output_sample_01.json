@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "E1",
+      "type": "event",
+      "label": "Milk procurement request received",
+      "responsible": "Quality Team",
+      "confidence": "high",
+      "reference": {
+        "kind": "text",
+        "value": [
+          "The milk procurement request is received by the quality team."
+        ]
+      }
+    },
+    {
+      "id": "A1",
+      "type": "activity",
+      "label": "Check milk against quality criteria",
+      "responsible": "Quality Team",
+      "confidence": "high",
+      "reference": {
+        "kind": "text",
+        "value": [
+          "The milk is checked against quality criteria."
+        ]
+      }
+    },
+    {
+      "id": "D1",
+      "type": "decision",
+      "label": "Is the milk compliant?",
+      "responsible": "Quality Team",
+      "confidence": "high",
+      "reference": {
+        "kind": "text",
+        "value": [
+          "If the milk is compliant, it is accepted and stored in the warehouse.",
+          "If it is not compliant, it is rejected and returned."
+        ]
+      }
+    },
+    {
+      "id": "E2",
+      "type": "event",
+      "label": "Milk accepted and stored",
+      "responsible": "Warehouse Team",
+      "confidence": "mid",
+      "reference": {
+        "kind": "text",
+        "value": [
+          "If the milk is compliant, it is accepted and stored in the warehouse."
+        ]
+      }
+    },
+    {
+      "id": "E3",
+      "type": "event",
+      "label": "Milk rejected and returned",
+      "responsible": "Warehouse Team",
+      "confidence": "mid",
+      "reference": {
+        "kind": "text",
+        "value": [
+          "If it is not compliant, it is rejected and returned."
+        ]
+      }
+    }
+  ],
+  "edges": [
+    { "from": "E1", "to": "A1" },
+    { "from": "A1", "to": "D1" },
+    { "from": "D1", "to": "E2", "condition": "Yes" },
+    { "from": "D1", "to": "E3", "condition": "No" }
+  ],
+  "open_questions": [],
+  "assumptions": [],
+  "notes": [
+    "This output represents a first-draft process flow extracted from free text."
+  ]
+}
