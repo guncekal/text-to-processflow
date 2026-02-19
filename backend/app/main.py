@@ -9,6 +9,7 @@ Minimal CLI that will later:
 """
 
 from __future__ import annotations
+from validator import validate_dsl_v1
 
 import argparse
 import json
@@ -41,6 +42,43 @@ def main() -> int:
 
     # Placeholder output (we'll replace this with LLM extraction in the next steps)
     result = {
+        "nodes": [
+            {
+                "id": "EV00",
+                "type": "event",
+                "label": "Request received",
+                "responsible": "Quality Team",
+                "confidence": "high",
+                "reference": {
+                    "kind": "text",
+                    "value": ["The milk procurement request is received."]
+                }
+            },
+            {
+                "id": "AC00",
+                "type": "activity",
+                "label": "Perform quality check",
+                "responsible": "Quality Team",
+                "confidence": "mid",
+                "reference": {
+                    "kind": "text",
+                    "value": ["The milk is checked against criteria."]
+                }
+            }
+        ],
+        "edges": [
+            {
+                "from": "EV00",
+                "to": "AC00"
+            }
+        ],
+        "open_questions": [],
+        "assumptions": [],
+        "notes": []
+    }
+
+    is_valid, errors = validate_dsl_v1(result)
+    result["validation"] = {"is_valid": is_valid, "errors": errors}
         "process": {
             "name": "FlowMind Draft",
             "source_type": "free_text",
