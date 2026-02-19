@@ -219,8 +219,6 @@ cd backend
 python app/main.py ../examples/input_sample.txt --out output.json
 ```
 
-## Configuration
-
 ## Configuration
 
 FlowMind requires an OpenAI API key to perform LLM-based extraction.
